@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Gace Diane Sayson | STEM Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Montserrat:wght@300;400&family=PT+Mono&family=Playfair+Display&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+</head>
+<body>
+
+    <section id="home"></section>
+    
+<header>
+    <label id="dark-change"></label>
+</header>
+
+
+
+<script src="app.js"></script>
+
+
+    <style>
+        body{
+         background-color: #f1ece5;
+        }
+    </style>
+<div>
+    <h1 class="it-stud">
+        Grace Diane K. Sayson
+    </h1>
+
+    <h2 class="soft">
+        Future <b class="sof" > NURSE  </b> | Grade 11 Student
+    </h2>
+    <img class="bg" src="img/bg.png">
+</div>
+
+<div>
+    <p class="parag" >
+      
+Hello, I'm Diane, a future Nurse with a passion for <br> providing
+ quality healthcare. I utilize bioengineering, <br> medical imaging,  and healthcare informatics <br> to develop  innovative  solutions for enhanced <br> patient care.
+    </p>
+</div>
+
+
+
+<div class="sidebar">
+    <ul>
+        <li><a href="#home" class="expi" onclick="scrollToSection('home')" >Home</a></li>
+        <li><a href="#photo" class="about-me" onclick="scrollToSection('photo')">Photo Gallery</a></li>
+        <li><a href="#video" class="video" onclick="scrollToSection('video')">Video Gallery</a></li>       
+        <li><a href="#community" class="socialmedia" onclick="scrollToSection('community')">Community</a></li>       
+    </ul>
+</div>
+
+
+
+<div class="social-media">
+    <a target="_blank" href="https://web.facebook.com/gracediane.sayson">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a target="_blank" href="https://www.tiktok.com/@diane_sayson">
+        <i class="fab fa-tiktok"></i>
+    </a>
+    <a target="_blank" href="https://www.instagram.com/dayana_soberya/">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a target="_blank" href="sgracediane@gmail.com">
+        <i class="fab fa-google fa-gmail"></i>
+    </a>
+</div>
+
+
+<button id="toggle-sidebar"><i class="menu">=</i></button>
+
+<script>
+    const toggleBtn = document.getElementById('toggle-sidebar');
+const sidebar = document.querySelector('.sidebar');
+
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+  if (sidebar.classList.contains('active')) {
+    toggleBtn.innerText = 'X';  
+  } else {
+    toggleBtn.innerText = '☰';
+  }
+});
+</script>
+
+
+
+<section id="photo">
+
+    <div class="cert">
+<h1> &ndash; Photo Gallery </h1>
+
+
+<div class="container">
+    <div class="box">
+        <img src="img/pic1.jpg">
+    </div>
+    <div class="box">
+        <img src="img/pic2.jpg">
+    </div>
+    <div class="box">
+        <img src="img/pic3.jpg">
+    </div>
+</div>
+<div class="container">
+    <div class="box">
+        <img src="img/pic4.jpg">
+    </div>
+    <div class="box">
+        <img src="img/pic5.jpg">
+    </div>
+    <div class="box">
+        <img src="img/pic6.gif">
+    </div>
+</div>
+
+
+
+</section>
+
+<section id="video">
+
+    <h1 class="vidtext" >&ndash; Video Gallery </h1>
+    <div class="vid">
+        
+        
+        <div>
+            <video src="video/vid1.mp4" controls></video>
+        </div>
+        <div>
+            <video src="video/vid2.mp4" controls></video>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="community">
+ 
+
+
+</section>
+
+<section id="comments">
+    <div class="testimonials-container">
+        <h2>Community</h2>
+        <div class="testimonial-card">
+          <img src="img/jul.png" alt="Client's profile picture">
+          <div class="testimonial-text">
+            <p>"I really like this website. Good job, Diane! More of this pleasee🤩"</p>
+            <h3>Julianne Gabas</h3>
+            <span>Grade 11 student | STEM </span>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+</html>
